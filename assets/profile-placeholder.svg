@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 440" role="img" aria-labelledby="title desc">
+  <title id="title">Chen Qian profile placeholder</title>
+  <desc id="desc">A minimal blue profile placeholder with the initials C Q.</desc>
+  <rect width="360" height="440" fill="#eef3f7"/>
+  <circle cx="180" cy="155" r="74" fill="#d6e2ec"/>
+  <path d="M70 380c12-91 55-137 110-137s98 46 110 137" fill="#d6e2ec"/>
+  <text x="180" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" letter-spacing="6" fill="#2d5f8b">CQ</text>
+</svg>
