@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research projects and publication by Chen Qian in sequential data, time series, statistical inference, and machine learning.">
+  <title>Research | Chen Qian</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="identity">
+      <h1>Chen Qian</h1>
+      <p class="title">Applied Mathematics Ph.D. Candidate · Sequential Data &amp; Machine Learning</p>
+      <address>
+        University of California, Davis<br>
+        Davis, California
+        <div class="contact-row">
+          <a href="mailto:mrcqian@ucdavis.edu">Email</a>
+          <a href="https://github.com/Chen20191020" target="_blank" rel="noopener">GitHub</a>
+          <a href="assets/Chen_Qian_CV.pdf" target="_blank" rel="noopener">CV</a>
+        </div>
+      </address>
+    </div>
+    <figure class="portrait">
+      <img src="assets/profile-photo.jpg" alt="Profile placeholder for Chen Qian">
+    </figure>
+  </div>
+</header>
+<nav class="primary-nav" aria-label="Primary navigation">
+  <div class="nav-inner">
+    <a href="index.html">Home</a>
+    <a class="active" href="research.html">Research</a>
+    <a href="experience.html">Experience</a>
+    <a href="software.html">Software &amp; Skills</a>
+    <a href="assets/Chen_Qian_CV.pdf" target="_blank" rel="noopener">CV</a>
+  </div>
+</nav>
+<main>
+  <section>
+    <h2>Research</h2>
+    <p class="lead">My research develops statistical and deep learning methods for sequential data, especially when signals are nonstationary and their temporal dependence evolves over time.</p>
+    <p>I study how to construct informative representations of complex temporal data, establish reliable statistical guarantees under dependence, and quantify uncertainty over an entire time domain. My work combines interpretable time-series modeling, time-frequency feature extraction, machine learning, and bootstrap-based inference, with applications to biomedical signals and financial data.</p>
+    <p>The broader goal is to create methods that are theoretically reliable, computationally scalable, and useful for real-world prediction and decision making.</p>
+  </section>
+
+  <section>
+    <h2>Selected Research Projects</h2>
+    <ul class="project-list">
+      <li>
+        <div class="entry-head"><div><h3>Structural Classification of Locally Stationary Time Series</h3><p class="entry-org">Time series · Machine learning · Biomedical signals</p></div><time>Nov. 2024 – Apr. 2026</time></div>
+        <ul class="clean-list">
+          <li>Developed an interpretable classification framework for sequential data using features derived from time-varying second-order dependence.</li>
+          <li>Estimated time-varying autoregressive structure through sieve-based approximation and summarized local versus global temporal variation for classification.</li>
+          <li>Evaluated the method on brain signal data and benchmarked it against 10 competing approaches, including convolution methods, shapelet methods, random forests, and recurrent neural networks.</li>
+          <li>Achieved up to <strong>94.7% test accuracy</strong> on abnormal-versus-normal brain signal classification, outperforming competitive statistical and deep learning baselines.</li>
+        </ul>
+        <p class="entry-links"><a href="https://doi.org/10.1093/jrsssb/qkag083" target="_blank" rel="noopener">Paper</a><a href="https://github.com/Chen20191020/TimeSeries_Classification" target="_blank" rel="noopener">Code</a></p>
+      </li>
+
+      <li>
+        <div class="entry-head"><div><h3>Time-Frequency Analysis for Nonstationary Signals</h3><p class="entry-org">PWVD · Wavelet packet transforms · Machine learning · Deep learning</p></div><time>Apr. 2025 – June 2025</time></div>
+        <ul class="clean-list">
+          <li>Converted raw financial price and brain signals into time-frequency features that capture how signal patterns change over time and frequency, using pseudo-Wigner–Ville distributions (PWVD) and wavelet packet transforms (WPT).</li>
+          <li>Built and evaluated machine-learning models to predict future price direction across 26 financial assets and to classify brain signals as normal or abnormal.</li>
+          <li>Achieved <strong>74.7% average price-direction accuracy</strong> under the best financial-model setting and <strong>81.3% brain signal classification accuracy</strong>.</li>
+          <li>Found that WPT was approximately 33 times faster than PWVD, while PWVD provided slightly higher average prediction accuracy.</li>
+        </ul>
+        <p class="entry-links"><a href="https://drive.google.com/file/d/14wfNDlOf8TtpNhZq9N_T5WNYUsZSeqdm/view?usp=sharing" target="_blank" rel="noopener">Project</a></p>
+      </li>
+
+      <!-- <li>
+        <div class="entry-head"><div><h3>Simultaneous Inference for Locally Stationary Time Series</h3><p class="entry-org">Statistical inference · Temporal dependence · Gaussian multiplier bootstrap</p></div><time>Sept. 2025 – Present</time></div>
+        <ul class="clean-list">
+          <li>Developing estimators for the autocorrelation function of locally stationary time series, where dependence evolves continuously over time.</li>
+          <li>Establishing consistency and convergence guarantees under temporally dependent data, providing a reliable framework for tracking evolving dependence patterns across different lag values.</li>
+          <li>Implementing Gaussian multiplier-bootstrap confidence bands to quantify uncertainty over the full time domain for the estimated autocorrelation function.</li>
+        </ul>
+      </li> -->
+    </ul>
+  </section>
+
+  <section>
+    <h2>Publication</h2>
+    <ol class="publication-list">
+      <li>
+        <a class="paper-title" href="https://arxiv.org/abs/2507.04237" target="_blank" rel="noopener">Structural Classification of Locally Stationary Time Series Based on Second-order Characteristics</a>
+        <p class="authors"><strong>Chen Qian</strong>, Xiucai Ding, and Lexin Li.</p>
+        <p class="venue"><em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, 2026, qkag083.</p>
+        <p class="entry-links"><a href="https://arxiv.org/abs/2507.04237" target="_blank" rel="noopener">arXiv</a><a href="https://github.com/Chen20191020/TimeSeries_Classification" target="_blank" rel="noopener">Code</a></p>
+      </li>
+    </ol>
+  </section>
+</main>
+<footer>
+  <p>© <span data-year></span> Chen Qian</p>
+  <p>Built for GitHub Pages</p>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
