@@ -3,91 +3,98 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Chen Qian, Applied Mathematics Ph.D. candidate at UC Davis working on sequential data, time series, statistical inference, and machine learning.">
-  <title>Chen Qian | Sequential Data &amp; Machine Learning</title>
+  <meta name="description" content="Chen Qian, Applied Mathematics Ph.D. candidate at UC Davis, researching time series, statistical learning, and inference for dependent data.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Home | Chen Qian</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+<a class="skip-link" href="#content">Skip to content</a>
 <header class="site-header">
   <div class="header-inner">
     <div class="identity">
-      <h1>Chen Qian</h1>
-      <p class="title">Applied Mathematics Ph.D. Candidate · Sequential Data &amp; Machine Learning</p>
-      <address>
-        University of California, Davis<br>
-        Davis, California
-        <div class="contact-row">
-          <a href="mailto:mrcqian@ucdavis.edu">Email</a>
-          <a href="https://github.com/Chen20191020" target="_blank" rel="noopener">GitHub</a>
-          <a href="assets/Chen_Qian_CV.pdf" target="_blank" rel="noopener">CV</a>
-        </div>
-      </address>
+      <p class="eyebrow">University of California, Davis</p>
+      <h1><a href="index.html">Chen Qian</a></h1>
+      <p class="title">Ph.D. Candidate in Applied Mathematics</p>
+      <p class="specialty">Time Series · Statistical Learning · Dependent Data</p>
+      <div class="contact-row" aria-label="Contact and academic profiles">
+        <a href="mailto:mrcqian@ucdavis.edu">Email</a>
+        <a href="https://github.com/Chen20191020" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=TE2tZyUAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      </div>
     </div>
     <figure class="portrait">
-      <img src="assets/profile-photo.jpg" alt="Profile placeholder for Chen Qian">
+      <img src="assets/profile-photo.jpg" alt="Portrait of Chen Qian" width="160" height="200">
     </figure>
   </div>
 </header>
-<nav class="primary-nav" aria-label="Primary navigation">
+<nav class="primary-nav" aria-label="Main navigation">
   <div class="nav-inner">
-    <a class="active" href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="experience.html">Experience</a>
-    <a href="software.html">Software &amp; Skills</a>
-    <a href="assets/Chen_Qian_CV.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="experience.html">Experience</a>
+      <a href="software.html">Software &amp; Skills</a>
+      <a href="cv.html">CV</a>
   </div>
 </nav>
-<main>
-  <section>
+<main id="content">
+<section>
     <h2>About Me</h2>
-    <p class="lead">I am a Ph.D. candidate in Applied Mathematics at the University of California, Davis. Before starting my Ph.D., I earned an M.S. in Statistics from UC Davis and a B.S. in Applied Statistics from the Complutense University of Madrid.</p>
-    <p>My research focuses on statistical and deep learning methods for sequential data, with particular emphasis on nonstationary signals and temporal dependence modeling. My goal is to develop interpretable, scalable, and data-driven methods that can extract meaningful patterns from complex temporal data and support real-world decision making.</p>
-    <p>I am currently seeking full-time opportunities for 2027–2028, particularly in roles such as Applied Scientist, Research Scientist, Machine Learning Scientist, Data Scientist. I am especially interested in opportunities involving sequential data, user behavior analytics, biomedical signals, and other temporal datasets.</p>
-    <p>Outside of my academic work, I enjoy soccer, table tennis, and traveling. You can contact me at <a href="mailto:mrcqian@ucdavis.edu">mrcqian@ucdavis.edu</a>.</p>
+    <p class="lead">I am a Ph.D. candidate in Applied Mathematics at the University of California, Davis, advised by Professor Xiucai Ding. I expect to complete my Ph.D. in June 2027.</p>
+    <p>My research focuses on time series, statistical learning, and inference for dependent data. I develop methods for time series classification and time-varying dependence estimation, combining theoretical analysis with empirical evaluation. I am particularly interested in interpretable statistical methods that can address problems with real-world impact.</p>
+    <p>Previously, I received an M.S. in Statistics from UC Davis and a B.S. in Applied Statistics from the Complutense University of Madrid.</p>
   </section>
-
   <section>
     <h2>Research Interests</h2>
     <ul class="clean-list interest-list">
-      <li>Nonstationary time series analysis</li>
-      <li>Statistical inference under temporal dependence</li>
-      <li>Deep learning for sequential data</li>
-      <li>Time-frequency feature extraction</li>
+      <li>Locally stationary time series</li>
+      <li>Classification of dependent data</li>
+      <li>Time-varying dependence estimation</li>
+      <li>Statistical inference and uncertainty quantification</li>
     </ul>
   </section>
-
   <section>
-    <h2>Current Research</h2>
-    <p>I am developing estimation and simultaneous inference methods for locally stationary time series. This work combines sieve-based estimation, convergence analysis, and multiplier bootstrap methods to construct simultaneous confidence bands.</p>
-    <p class="entry-links"><a href="research.html">Read more about my research</a><a href="https://scholar.google.com/citations?hl=en&user=TE2tZyUAAAAJ" target="_blank" rel="noopener">View my publication</a></p>
+    <h2>Research Highlights</h2>
+    <ul class="timeline">
+      <li>
+        <h3>Structural classification of locally stationary time series</h3>
+        <p>An interpretable classifier based on time-varying autoregressive features, with theoretical guarantees and <strong>94.7% accuracy</strong> on 150 test subjects from the TUH Abnormal EEG Corpus.</p>
+        <p class="small">Published in <em>JRSS Series B</em>, 2026.</p>
+      </li>
+      <li>
+        <h3>Multivariate time series and multichannel EEG</h3>
+        <p>Structural approximation and classification methods for multichannel signals, achieving <strong>95.3% accuracy</strong> (61 of 64 test events; F1 score 0.914) on seizure classification using the Siena Scalp EEG Database.</p>
+        <p class="small">Completed manuscript; final proofreading.</p>
+      </li>
+      <li>
+        <h3>Simultaneous inference for constrained autocorrelation</h3>
+        <p>Constrained sieve regression and simultaneous confidence bands for time-varying autocorrelation in locally stationary time series.</p>
+        <p class="small">Work in progress.</p>
+      </li>
+    </ul>
   </section>
-
+  <section>
+    <h2>Selected Publication</h2>
+    <article class="publication">
+      <h3><a href="https://doi.org/10.1093/jrsssb/qkag083" target="_blank" rel="noopener noreferrer">Structural classification of locally stationary time series based on second-order characteristics</a></h3>
+      <p class="authors"><strong>Chen Qian</strong>, Xiucai Ding, and Lexin Li (2026).</p>
+      <p class="venue"><em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, qkag083.</p>
+      <p class="entry-links"><a href="https://doi.org/10.1093/jrsssb/qkag083" target="_blank" rel="noopener noreferrer">DOI</a><a href="https://github.com/Chen20191020/TimeSeries_Classification" target="_blank" rel="noopener noreferrer">Code</a></p>
+    </article>
+  </section>
   <section>
     <h2>Education</h2>
     <ul class="timeline">
-      <li>
-        <div class="entry-head"><div><h3>Ph.D. in Applied Mathematics</h3><p class="entry-org">University of California, Davis · Davis, CA</p></div><time>Expected June 2027</time></div>
-      </li>
-      <li>
-        <div class="entry-head"><div><h3>M.S. in Statistics</h3><p class="entry-org">University of California, Davis · Davis, CA</p></div><time>June 2023</time></div>
-      </li>
-      <li>
-        <div class="entry-head"><div><h3>B.S. in Applied Statistics</h3><p class="entry-org">Complutense University of Madrid · Madrid, Spain</p></div><time>July 2020</time></div>
-      </li>
+      <li><div class="entry-head"><div><h3>Ph.D. in Applied Mathematics</h3><p class="entry-org">University of California, Davis · Advisor: Prof. Xiucai Ding</p></div><time>Expected June 2027</time></div></li>
+      <li><div class="entry-head"><div><h3>M.S. in Statistics</h3><p class="entry-org">University of California, Davis</p></div><time>June 2023</time></div></li>
+      <li><div class="entry-head"><div><h3>B.S. in Applied Statistics</h3><p class="entry-org">Complutense University of Madrid</p></div><time>July 2020</time></div></li>
     </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:mrcqian@ucdavis.edu">mrcqian@ucdavis.edu</a><br>
-    GitHub: <a href="https://github.com/Chen20191020" target="_blank" rel="noopener">Chen20191020</a><br>
-    Location: Davis, California</p>
   </section>
 </main>
 <footer>
-  <p>© <span data-year></span> Chen Qian</p>
-  <p>Built for GitHub Pages</p>
+  <p>© <span data-year>2026</span> Chen Qian</p>
+  <p>University of California, Davis</p>
 </footer>
 <script src="assets/site.js"></script>
 </body>
