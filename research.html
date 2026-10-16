@@ -3,100 +3,104 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Research projects and publication by Chen Qian in sequential data, time series, statistical inference, and machine learning.">
+  <meta name="description" content="Chen Qian research: time series classification, structural approximations, simultaneous inference, EEG analysis, and publications.">
+  <meta name="theme-color" content="#ffffff">
   <title>Research | Chen Qian</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+<a class="skip-link" href="#content">Skip to content</a>
 <header class="site-header">
   <div class="header-inner">
     <div class="identity">
-      <h1>Chen Qian</h1>
-      <p class="title">Applied Mathematics Ph.D. Candidate · Sequential Data &amp; Machine Learning</p>
-      <address>
-        University of California, Davis<br>
-        Davis, California
-        <div class="contact-row">
-          <a href="mailto:mrcqian@ucdavis.edu">Email</a>
-          <a href="https://github.com/Chen20191020" target="_blank" rel="noopener">GitHub</a>
-          <a href="assets/Chen_Qian_CV.pdf" target="_blank" rel="noopener">CV</a>
-        </div>
-      </address>
+      <p class="eyebrow">University of California, Davis</p>
+      <h1><a href="index.html">Chen Qian</a></h1>
+      <p class="title">Ph.D. Candidate in Applied Mathematics</p>
+      <p class="specialty">Time Series · Statistical Learning · Dependent Data</p>
+      <div class="contact-row" aria-label="Contact and academic profiles">
+        <a href="mailto:mrcqian@ucdavis.edu">Email</a>
+        <a href="https://github.com/Chen20191020" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=TE2tZyUAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      </div>
     </div>
     <figure class="portrait">
-      <img src="assets/profile-photo.jpg" alt="Profile placeholder for Chen Qian">
+      <img src="assets/profile-photo.jpg" alt="Portrait of Chen Qian" width="160" height="200">
     </figure>
   </div>
 </header>
-<nav class="primary-nav" aria-label="Primary navigation">
+<nav class="primary-nav" aria-label="Main navigation">
   <div class="nav-inner">
-    <a href="index.html">Home</a>
-    <a class="active" href="research.html">Research</a>
-    <a href="experience.html">Experience</a>
-    <a href="software.html">Software &amp; Skills</a>
-    <a href="assets/Chen_Qian_CV.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active" aria-current="page">Research</a>
+      <a href="experience.html">Experience</a>
+      <a href="software.html">Software &amp; Skills</a>
+      <a href="cv.html">CV</a>
   </div>
 </nav>
-<main>
-  <section>
+<main id="content">
+<section>
     <h2>Research</h2>
-    <p class="lead">My research develops statistical and deep learning methods for sequential data, especially when signals are nonstationary and their temporal dependence evolves over time.</p>
-    <p>I study how to construct informative representations of complex temporal data, establish reliable statistical guarantees under dependence, and quantify uncertainty over an entire time domain. My work combines interpretable time-series modeling, time-frequency feature extraction, machine learning, and bootstrap-based inference, with applications to biomedical signals and financial data.</p>
-    <p>The broader goal is to create methods that are theoretically reliable, computationally scalable, and useful for real-world prediction and decision making.</p>
+    <p class="lead">I study modeling and inference for dependent data, with an emphasis on empirical performance and interpretability.</p>
+    <p>My work develops structural representations of locally stationary time series, statistical methods for classification, and simultaneous inference for time-varying dependence. I am interested in rigorous statistical guarantees and applications to complex multichannel signals.</p>
   </section>
-
-  <section>
-    <h2>Selected Research Projects</h2>
-    <ul class="project-list">
-      <li>
-        <div class="entry-head"><div><h3>Structural Classification of Locally Stationary Time Series</h3><p class="entry-org">Time series · Machine learning · Biomedical signals</p></div><time>Nov. 2024 – Apr. 2026</time></div>
-        <ul class="clean-list">
-          <li>Developed an interpretable classification framework for sequential data using features derived from time-varying second-order dependence.</li>
-          <li>Estimated time-varying autoregressive structure through sieve-based approximation and summarized local versus global temporal variation for classification.</li>
-          <li>Evaluated the method on brain signal data and benchmarked it against 10 competing approaches, including convolution methods, shapelet methods, random forests, and recurrent neural networks.</li>
-          <li>Achieved up to <strong>94.7% test accuracy</strong> on abnormal-versus-normal brain signal classification, outperforming competitive statistical and deep learning baselines.</li>
-        </ul>
-        <p class="entry-links"><a href="https://doi.org/10.1093/jrsssb/qkag083" target="_blank" rel="noopener">Paper</a><a href="https://github.com/Chen20191020/TimeSeries_Classification" target="_blank" rel="noopener">Code</a></p>
-      </li>
-
-      <li>
-        <div class="entry-head"><div><h3>Time-Frequency Analysis for Nonstationary Signals</h3><p class="entry-org">PWVD · Wavelet packet transforms · Machine learning · Deep learning</p></div><time>Apr. 2025 – June 2025</time></div>
-        <ul class="clean-list">
-          <li>Converted raw financial price and brain signals into time-frequency features that capture how signal patterns change over time and frequency, using pseudo-Wigner–Ville distributions (PWVD) and wavelet packet transforms (WPT).</li>
-          <li>Built and evaluated machine-learning models to predict future price direction across 26 financial assets and to classify brain signals as normal or abnormal.</li>
-          <li>Achieved <strong>74.7% average price-direction accuracy</strong> under the best financial-model setting and <strong>81.3% brain signal classification accuracy</strong>.</li>
-          <li>Found that WPT was approximately 33 times faster than PWVD, while PWVD provided slightly higher average prediction accuracy.</li>
-        </ul>
-        <p class="entry-links"><a href="https://drive.google.com/file/d/14wfNDlOf8TtpNhZq9N_T5WNYUsZSeqdm/view?usp=sharing" target="_blank" rel="noopener">Project</a></p>
-      </li>
-
-      <!-- <li>
-        <div class="entry-head"><div><h3>Simultaneous Inference for Locally Stationary Time Series</h3><p class="entry-org">Statistical inference · Temporal dependence · Gaussian multiplier bootstrap</p></div><time>Sept. 2025 – Present</time></div>
-        <ul class="clean-list">
-          <li>Developing estimators for the autocorrelation function of locally stationary time series, where dependence evolves continuously over time.</li>
-          <li>Establishing consistency and convergence guarantees under temporally dependent data, providing a reliable framework for tracking evolving dependence patterns across different lag values.</li>
-          <li>Implementing Gaussian multiplier-bootstrap confidence bands to quantify uncertainty over the full time domain for the estimated autocorrelation function.</li>
-        </ul>
-      </li> -->
-    </ul>
-  </section>
-
   <section>
     <h2>Publication</h2>
     <ol class="publication-list">
       <li>
-        <a class="paper-title" href="https://arxiv.org/abs/2507.04237" target="_blank" rel="noopener">Structural Classification of Locally Stationary Time Series Based on Second-order Characteristics</a>
-        <p class="authors"><strong>Chen Qian</strong>, Xiucai Ding, and Lexin Li.</p>
-        <p class="venue"><em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, 2026, qkag083.</p>
-        <p class="entry-links"><a href="https://arxiv.org/abs/2507.04237" target="_blank" rel="noopener">arXiv</a><a href="https://github.com/Chen20191020/TimeSeries_Classification" target="_blank" rel="noopener">Code</a></p>
+        <h3><a href="https://doi.org/10.1093/jrsssb/qkag083" target="_blank" rel="noopener noreferrer">Structural classification of locally stationary time series based on second-order characteristics</a></h3>
+        <p class="authors"><strong>Chen Qian</strong>, Xiucai Ding, and Lexin Li (2026).</p>
+        <p class="venue"><em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, qkag083.</p>
+        <p class="entry-links"><a href="https://doi.org/10.1093/jrsssb/qkag083" target="_blank" rel="noopener noreferrer">DOI</a><a href="https://arxiv.org/abs/2507.04237" target="_blank" rel="noopener noreferrer">arXiv</a><a href="https://github.com/Chen20191020/TimeSeries_Classification" target="_blank" rel="noopener noreferrer">Code</a></p>
       </li>
     </ol>
   </section>
+  <section>
+    <h2>Manuscripts &amp; Work in Progress</h2>
+    <ul class="manuscript-list">
+      <li>
+        <h3>Structural Approximations for Multivariate Locally Stationary Time Series with Applications to Multichannel Signal Analysis</h3>
+        <p class="authors">Xiucai Ding, <strong>Chen Qian</strong>, and Jeffrey Wang.</p>
+        <p class="small">Completed manuscript; final proofreading.</p>
+      </li>
+      <li>
+        <h3>On the Simultaneous Inferential Theory for Locally Stationary Time Series under Constraints</h3>
+        <p class="authors">Xiucai Ding, <strong>Chen Qian</strong>, and Zhou Zhou.</p>
+        <p class="small">Work in progress.</p>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h2>Research Projects</h2>
+    <ul class="project-list">
+      <li>
+        <div class="entry-head"><div><h3>Structural Classification of Locally Stationary Time Series</h3><p class="entry-org">Joint work with Xiucai Ding and Lexin Li</p></div><time>Nov. 2024 – Apr. 2026</time></div>
+        <ul class="clean-list">
+          <li>Developed a classifier using time-varying autoregressive models to extract interpretable features of temporal dependence.</li>
+          <li>Established feature consistency and asymptotic classification guarantees under class-separation conditions.</li>
+          <li>Evaluated normal/abnormal EEG classification on the TUH Abnormal EEG Corpus, obtaining <strong>94.7% accuracy</strong> on 150 test subjects.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="entry-head"><div><h3>Structural Approximation of Multivariate Time Series and Multichannel EEG Classification</h3><p class="entry-org">Joint work with Xiucai Ding and Jeffrey Wang</p></div><time>Jan. 2026 – Present</time></div>
+        <ul class="clean-list">
+          <li>Implemented estimation, cross-validated model selection, and classification algorithms; conducted simulations across dependence patterns and class-balance settings.</li>
+          <li>Analyzed the Siena Scalp EEG Database for seizure/non-seizure classification, correctly identifying <strong>61 of 64 test events (95.3% accuracy; F1 score 0.914)</strong>.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="entry-head"><div><h3>Constrained Autocorrelation Estimation and Simultaneous Inference</h3><p class="entry-org">Joint work with Xiucai Ding and Zhou Zhou</p></div><time>June 2026 – Present</time></div>
+        <ul class="clean-list">
+          <li>Formulated time-varying autocorrelation estimation using constrained sieve regression and constructed simultaneous confidence bands.</li>
+          <li>Implemented a block multiplier procedure and evaluated confidence-band coverage in simulations; developing proofs of uniform consistency and asymptotic validity.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
 </main>
 <footer>
-  <p>© <span data-year></span> Chen Qian</p>
-  <p>Built for GitHub Pages</p>
+  <p>© <span data-year>2026</span> Chen Qian</p>
+  <p>University of California, Davis</p>
 </footer>
 <script src="assets/site.js"></script>
 </body>
