@@ -1,19 +1,21 @@
-# Chen Qian — Personal Website
+# Chen Qian — Academic Website
 
-A static multi-page website for GitHub Pages. The visual theme and page structure are intentionally minimal and professional.
+A responsive, minimalist academic website hosted on GitHub Pages.
 
 ## Pages
 
-- `index.html` — About, research interests, current research, education, and contact
-- `research.html` — Research overview, selected projects, and publication
-- `experience.html` — Professional experience, teaching, leadership, and awards
-- `software.html` — Software, technical skills, languages, and CV
-- `assets/Chen_Qian_CV.pdf` — Current résumé/CV
+- `index.html` — biography, research highlights, education
+- `research.html` — publication, manuscripts, research projects
+- `experience.html` — teaching, professional experience, honors and awards
+- `software.html` — research code and technical skills
+- `cv.html` — up-to-date web CV (October 2026); browser-printable to PDF
 
-## Publish
+## Design
 
-Upload the contents of this folder to the root of the `Chen20191020.github.io` repository. In GitHub Pages settings, select `Deploy from a branch`, branch `main`, folder `/ (root)`.
+Shared styling lives in `assets/styles.css`. The design uses white space, typography, subtle navy-gray links, and accessible single-instance navigation links. The portrait remains at `assets/profile-photo.jpg`.
 
-## Update later
+## Deployment
 
-Edit the HTML files for content and `assets/styles.css` for appearance. Replace `assets/Chen_Qian_CV.pdf` with a new file of the same name to update the downloadable CV without changing any links.
+Publish from the repository root on `main` using GitHub Pages.
+
+**CV note:** The old `assets/Chen_Qian_CV.pdf` remains in the repository as an unlinked legacy file. The nav CV page is updated from the supplied October 2026 CV, so visitors don't receive the outdated PDF. To replace the binary PDF later, upload the updated CV under the same path.
