@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Chen Qian research: time series classification, structural approximations, simultaneous inference, EEG analysis, and publications.">
+  <meta name="description" content="Research and publications by Chen Qian: locally stationary time series classification, multivariate signal analysis, and simultaneous inference for dependent data.">
   <meta name="theme-color" content="#ffffff">
   <title>Research | Chen Qian</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -17,7 +17,7 @@
       <p class="eyebrow">University of California, Davis</p>
       <h1><a href="index.html">Chen Qian</a></h1>
       <p class="title">Ph.D. Candidate in Applied Mathematics</p>
-      <p class="specialty">Time Series · Statistical Learning · Dependent Data</p>
+      <p class="specialty">Statistical Learning · Inference · Dependent Data</p>
       <div class="contact-row" aria-label="Contact and academic profiles">
         <a href="mailto:mrcqian@ucdavis.edu">Email</a>
         <a href="https://github.com/Chen20191020" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -35,64 +35,79 @@
       <a href="research.html" class="active" aria-current="page">Research</a>
       <a href="experience.html">Experience</a>
       <a href="software.html">Software</a>
-      <a href="assets/Chen_Qian_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+      <a href="assets/Chen_Qian_CV.pdf?v=20261021" target="_blank" rel="noopener noreferrer">CV</a>
   </div>
 </nav>
 <main id="content">
 <section>
     <h2>Research</h2>
-    <p class="lead">I study modeling and inference for dependent data, with an emphasis on empirical performance and interpretability.</p>
-    <p>My work develops structural representations of locally stationary time series, statistical methods for classification, and simultaneous inference for time-varying dependence. I am interested in rigorous statistical guarantees and applications to complex multichannel signals.</p>
+    <p class="lead">My research focuses on statistical learning, inference, and reliability for dependent data, particularly nonstationary time series, with an emphasis on real-world applications.</p>
+    <p>My future research aims to develop mathematically principled, interpretable, and reliable methods for dependent and sequential data. I am interested in further developing and adapting time series classification methodology to more complex real-world problems, foundation models for health applications with few labeled subjects, and statistical reliability for dependent and nonstationary data.</p>
   </section>
   <section>
-    <h2>Publication</h2>
+    <h2>Publications</h2>
     <ol class="publication-list">
       <li>
         <h3><a href="https://doi.org/10.1093/jrsssb/qkag083" target="_blank" rel="noopener noreferrer">Structural classification of locally stationary time series based on second-order characteristics</a></h3>
-        <p class="authors"><strong>Chen Qian</strong>, Xiucai Ding, and Lexin Li (2026).</p>
+        <p class="authors"><strong>Qian, C.</strong>, Ding, X., and Li, L. (2026).</p>
         <p class="venue"><em>Journal of the Royal Statistical Society Series B: Statistical Methodology</em>, qkag083.</p>
-        <p class="entry-links"><a href="https://doi.org/10.1093/jrsssb/qkag083" target="_blank" rel="noopener noreferrer">DOI</a><a href="https://arxiv.org/abs/2507.04237" target="_blank" rel="noopener noreferrer">arXiv</a><a href="https://github.com/Chen20191020/TimeSeries_Classification" target="_blank" rel="noopener noreferrer">Code</a></p>
+        <p class="entry-links"><a href="https://doi.org/10.1093/jrsssb/qkag083" target="_blank" rel="noopener noreferrer">DOI</a></p>
+      </li>
+      <li>
+        <h3>Structural Approximations for Multivariate Locally Stationary Time Series with Applications to Multichannel Signal Analysis</h3>
+        <p class="authors">Ding, X., <strong>Qian, C.</strong>, and Wang, J. (alphabetical order).</p>
+        <p class="venue">Submitted.</p>
+      </li>
+      <li>
+        <h3>On the Simultaneous Inferential Theory for Locally Stationary Time Series under Constraints</h3>
+        <p class="authors">Ding, X., <strong>Qian, C.</strong>, and Zhou, Z. (alphabetical order).</p>
+        <p class="venue">Work in progress.</p>
       </li>
     </ol>
   </section>
   <section>
-    <h2>Manuscripts &amp; Work in Progress</h2>
-    <ul class="manuscript-list">
-      <li>
-        <h3>Structural Approximations for Multivariate Locally Stationary Time Series with Applications to Multichannel Signal Analysis</h3>
-        <p class="authors">Xiucai Ding, <strong>Chen Qian</strong>, and Jeffrey Wang.</p>
-        <p class="small">Completed manuscript; final proofreading.</p>
-      </li>
-      <li>
-        <h3>On the Simultaneous Inferential Theory for Locally Stationary Time Series under Constraints</h3>
-        <p class="authors">Xiucai Ding, <strong>Chen Qian</strong>, and Zhou Zhou.</p>
-        <p class="small">Work in progress.</p>
-      </li>
-    </ul>
-  </section>
-  <section>
-    <h2>Research Projects</h2>
+    <h2>Research Experience</h2>
     <ul class="project-list">
       <li>
-        <div class="entry-head"><div><h3>Structural Classification of Locally Stationary Time Series</h3><p class="entry-org">Joint work with Xiucai Ding and Lexin Li</p></div><time>Nov. 2024 – Apr. 2026</time></div>
+        <div class="entry-head">
+          <div>
+            <h3>Structural Classification of Locally Stationary Time Series</h3>
+            <p class="entry-org">Joint work with Xiucai Ding and Lexin Li; JRSS Series B, 2026</p>
+          </div>
+          <time>Nov. 2024 – Apr. 2026</time>
+        </div>
         <ul class="clean-list">
-          <li>Developed a classifier using time-varying autoregressive models to extract interpretable features of temporal dependence.</li>
-          <li>Established feature consistency and asymptotic classification guarantees under class-separation conditions.</li>
-          <li>Evaluated normal/abnormal EEG classification on the TUH Abnormal EEG Corpus, obtaining <strong>94.7% accuracy</strong> on 150 test subjects.</li>
+          <li>Developed a complete classification procedure for locally stationary time series, leveraging the autoregressive approximation framework for nonstationary time series to extract interpretable features of temporal dependence.</li>
+          <li>Designed and conducted simulation studies to evaluate parameter selection and robustness across different scenarios; performed real-data classification on the TUH Abnormal EEG Corpus, achieving 94.7% accuracy on 150 test subjects using the Cz channel.</li>
+          <li>Collaborated with my advisor to establish feature consistency and asymptotic classification guarantees under class-separation conditions.</li>
         </ul>
       </li>
       <li>
-        <div class="entry-head"><div><h3>Structural Approximation of Multivariate Time Series and Multichannel EEG Classification</h3><p class="entry-org">Joint work with Xiucai Ding and Jeffrey Wang</p></div><time>Jan. 2026 – Present</time></div>
+        <div class="entry-head">
+          <div>
+            <h3>Structural Approximation of Multivariate Time Series and Multichannel EEG Classification</h3>
+            <p class="entry-org">Joint work with Xiucai Ding and Jeffrey Wang; completed manuscript</p>
+          </div>
+          <time>Jan. 2026 – Present</time>
+        </div>
         <ul class="clean-list">
-          <li>Implemented estimation, cross-validated model selection, and classification algorithms; conducted simulations across dependence patterns and class-balance settings.</li>
-          <li>Analyzed the Siena Scalp EEG Database for seizure/non-seizure classification, correctly identifying <strong>61 of 64 test events (95.3% accuracy; F1 score 0.914)</strong>.</li>
+          <li>Implemented the classification procedure and developed strategies for dimension selection, norm selection, and hyperparameter tuning; conducted simulation studies across various dependence structures and class-balance settings.</li>
+          <li>Conducted comparisons with existing modern classification methods in both simulations and real-data applications.</li>
+          <li>Performed end-to-end multichannel EEG analysis on the Siena Scalp EEG Database, including preprocessing, parameter tuning, channel and norm selection, achieving 95.3% classification accuracy (61 of 64 test events) and an F1 score of 0.914.</li>
         </ul>
       </li>
       <li>
-        <div class="entry-head"><div><h3>Constrained Autocorrelation Estimation and Simultaneous Inference</h3><p class="entry-org">Joint work with Xiucai Ding and Zhou Zhou</p></div><time>June 2026 – Present</time></div>
+        <div class="entry-head">
+          <div>
+            <h3>Constrained Autocorrelation Estimation and Simultaneous Inference</h3>
+            <p class="entry-org">Joint work with Xiucai Ding and Zhou Zhou; work in progress</p>
+          </div>
+          <time>June 2026 – Present</time>
+        </div>
         <ul class="clean-list">
-          <li>Formulated time-varying autocorrelation estimation using constrained sieve regression and constructed simultaneous confidence bands.</li>
-          <li>Implemented a block multiplier procedure and evaluated confidence-band coverage in simulations; developing proofs of uniform consistency and asymptotic validity.</li>
+          <li>Developed the constrained estimator for the time-varying autocorrelation function of locally stationary time series and constructed simultaneous confidence bands using the multiplier bootstrap procedure.</li>
+          <li>Designed and conducted simulation studies to evaluate estimation accuracy and confidence-band coverage.</li>
+          <li>Currently establishing uniform consistency of the estimator and asymptotic validity of the simultaneous confidence bands.</li>
         </ul>
       </li>
     </ul>
