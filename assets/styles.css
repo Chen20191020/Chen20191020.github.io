@@ -44,7 +44,7 @@ p { margin: 0 0 15px; }
 .small { color: var(--muted); font-size: .91rem; }
 .clean-list { margin: 0; padding-left: 1.27rem; }
 .clean-list li { margin: 7px 0; padding-left: 3px; }
-.interest-list { columns: 1; }
+.interest-list { columns: 2; column-gap: 44px; }
 .interest-list li { break-inside: avoid; }
 .timeline, .project-list, .publication-list, .software-list, .manuscript-list { margin: 0; padding: 0; list-style: none; }
 .timeline > li, .project-list > li, .software-list > li, .manuscript-list > li { border-bottom: 1px solid var(--line); padding: 0 0 21px; margin: 0 0 22px; }
